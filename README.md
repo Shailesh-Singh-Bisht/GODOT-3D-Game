@@ -11,7 +11,7 @@ The game follows the excellent tutorial series by **Brackeys**, adapted for Godo
 
 ## 🎮 Download
 
-You can download the latest playable Windows `.exe` build from the [Releases](https://github.com/YOUR_USERNAME/3d-godot-tutorial/releases) page.
+You can download the latest playable Windows `.exe` build from the [Releases](https://github.com/Shailesh-Singh-Bisht/GODOT-3D-Game/releases/tag/Release) page.
 
 ---
 
