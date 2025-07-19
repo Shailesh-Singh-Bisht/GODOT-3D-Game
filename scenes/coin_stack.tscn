@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://co8ktw3ea1fwe"]
+
+[ext_resource type="PackedScene" uid="uid://c5h62uoamrvjq" path="res://models/props/coin_stack.glb" id="1_ws3tn"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_y62i6"]
+radius = 0.8
+
+[node name="coin_stack" type="StaticBody3D"]
+
+[node name="coin_stack" parent="." instance=ExtResource("1_ws3tn")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("SphereShape3D_y62i6")

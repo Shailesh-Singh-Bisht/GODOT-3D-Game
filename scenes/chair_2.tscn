@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c04w5ekxiaoqk"]
+
+[ext_resource type="PackedScene" uid="uid://skoshora3bt8" path="res://models/props/chair.glb" id="1_dca5y"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xc6x1"]
+height = 1.1
+
+[node name="chair2" type="StaticBody3D"]
+
+[node name="chair2" parent="." instance=ExtResource("1_dca5y")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
+shape = SubResource("CylinderShape3D_xc6x1")

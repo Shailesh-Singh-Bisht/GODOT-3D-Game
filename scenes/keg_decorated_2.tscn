@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi4ql5hwdqb3m"]
+
+[ext_resource type="PackedScene" uid="uid://dugwm51m7axam" path="res://models/props/keg_decorated.glb" id="1_qx2ra"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0lcng"]
+size = Vector3(1.8, 3.3, 2.3)
+
+[node name="keg_decorated2" type="StaticBody3D"]
+
+[node name="keg_decorated2" parent="." instance=ExtResource("1_qx2ra")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.0797573, 0.988629, 0.12748, -0.995209, 0.0717197, 0.0664502, 0.0565518, -0.132169, 0.989613, 0.0901065, 0.976088, 0.152318)
+shape = SubResource("BoxShape3D_0lcng")

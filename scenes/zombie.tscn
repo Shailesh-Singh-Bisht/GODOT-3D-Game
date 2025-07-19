@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://drn4aoymk7xmb"]
+
+[ext_resource type="PackedScene" uid="uid://5hkai6aymmyn" path="res://zombie/zombie.glb" id="1_httt1"]
+[ext_resource type="AnimationLibrary" uid="uid://b5im2im6t56yc" path="res://zombie/zombie_idle.glb" id="2_xepks"]
+
+[node name="zombie" type="Node3D"]
+
+[node name="zombie" parent="." instance=ExtResource("1_httt1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0, -0.9)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="zombie"]
+libraries = {
+&"zombie_idle": ExtResource("2_xepks")
+}
+autoplay = "zombie_idle/Idle"
